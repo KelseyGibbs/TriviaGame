@@ -1,7 +1,5 @@
 var counter = 0;
 var correct = 0;
-var incorrect = 0;
-
 var questions = [{
   question: "1. The first cookbook to mention a donut was published in what year?",
   options: ["1601", "1702", "1803", "1904"],
@@ -63,12 +61,14 @@ $(document).ready(function () {
   
   $("#quiz").on("click", ".options", (function () {
     var userGuess=$(this).text();
+    console.log(userGuess + "Whatya clicken on")
     if (userGuess === questions[counter].correct){
-      counter++;
-      mainGame();
+      correct++;
+      $("#results").html("You know your donuts!")
+      update();
     } else {
-      counter++;
-      mainGame();
+      $("#results").html("Don't cry over a dropped donut! The correct answer was " + questions[counter].correct)
+      update();
     }
   }));
   
@@ -81,7 +81,8 @@ $(document).ready(function () {
     appendQuestion();
   }
 
-  function mainGame() {
+  function update() {
+    counter ++;
     appendQuestion();
   }
 

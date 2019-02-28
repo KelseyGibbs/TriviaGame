@@ -1,35 +1,38 @@
 body {
-    background-color: #DB2763;
+    background-image: url("../images/sheri-silver-1342673-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
 }
 
 .row {
     width: 100%;
 }
 #trivia {
-    background-color: #34E4EA;
+
 }
 
 #directions {
-    background-color: #F8C0C8;
+
 }
 
 #picture {
-    background-color: #6B2D5C;
+    
 }
 
 #quiz {
-    background-color: #F8C0C8;
+   
 }
 
 #options {
-    background-color: #6B2D5C;
+   
 }
 
 #timer {
-    background-color: #6B2D5C;
+    
 }
 
 #results {
-    background-color: #6B2D5C;
-}
+    
 
