@@ -2,37 +2,40 @@ body {
     background-image: url("../images/sheri-silver-1342673-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
-    
+    height: 100%;
+
+
 }
 
 .row {
     width: 100%;
 }
+
+.options {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    color: # hotpink;
+    text-align: center;
+}
+
 #trivia {
-
+    margin-top: 2in;
 }
 
-#directions {
+#directions {}
 
-}
+#picture {}
 
-#picture {
-    
-}
+#quiz {}
 
-#quiz {
-   
-}
+#options {}
 
-#options {
-   
-}
-
-#timer {
-    
-}
+#timer {}
 
 #results {
-    
-
+    padding-top: .5in;
+}
